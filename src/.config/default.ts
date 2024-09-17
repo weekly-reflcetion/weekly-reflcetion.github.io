@@ -4,7 +4,7 @@ export const configDefault: Config = {
 	title: "Weekly Reflections",
 	author: "",
 	desc: "My weekly reflections on life, the universe, and everything.",
-	website: "https://astro-theme-typography.vercel.app/",
+	website: "https://cantpr09ram.github.io",
 	locale: "en-us",
 	themeStyle: "light",
 	socials: [
