@@ -26,7 +26,6 @@ export async function GET(_context: APIContext) {
 				description: post.data.description,
 				customData: post.data.customData,
 				categories: post.data.categories,
-				commentsUrl: post.data.commentsUrl,
 				source: post.data.source,
 				enclosure: post.data.enclosure,
 			};
