@@ -1,7 +1,7 @@
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 import robotsTxt from "astro-robots-txt";
-import { defineConfig } from "astro/config";
+import { defineConfig, squooshImageService } from "astro/config";
 import UnoCSS from "unocss/astro";
 import { config } from "./src/.config";
 
@@ -24,4 +24,8 @@ export default defineConfig({
 		sitemap(),
 		mdx(),
 	],
+	scopedStyleStrategy: "where",
+	image: {
+		service: squooshImageService(),
+	},
 });
