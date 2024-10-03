@@ -66,6 +66,7 @@ async function createPost(): Promise<void> {
 
 	const targetDir = "./src/content/posts/";
 	const fullPath: string = path.join(targetDir, `${filename}${ext}`);
+	const photoDir: string = path.join('./src/assets/images', `${dayOfWeek}`);
 
 	const frontmatter = `---
 title: '${dayOfWeek}'
@@ -79,6 +80,11 @@ description: '${weekDates.start.toISOString().slice(0, 10)} to ${weekDates.end.t
 	try {
 		fs.writeFileSync(fullPath, frontmatter);
 		consola.success("New post created successfully!");
+		// Create the photo directory
+        if (!fs.existsSync(photoDir)) {
+            fs.mkdirSync(photoDir);
+            consola.success("Photo directory created successfully!");
+        }
 
 		const open: boolean = await consola.prompt("Open the new post?", {
 			type: "confirm",
