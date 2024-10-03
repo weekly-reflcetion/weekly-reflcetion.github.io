@@ -31,14 +31,14 @@
 		"@iconify-json/mdi": "^1.1.64",
 		"@types/markdown-it": "^14.1.1",
 		"@types/node": "^20.12.7",
-		"@types/sanitize-html": "^2.9.5",
+		"@types/sanitize-html": "^2.13.0",
 		"@unocss/reset": "^0.59.0",
 		"@unocss/transformer-directives": "^0.60.4",
 		"bumpp": "^9.4.0",
 		"consola": "^3.2.3",
 		"esno": "^4.7.0",
 		"markdown-it": "^14.1.0",
-		"sanitize-html": "^2.11.0",
+		"sanitize-html": "^2.13.0",
 		"unocss": "^0.60.4"
 	}
 }
